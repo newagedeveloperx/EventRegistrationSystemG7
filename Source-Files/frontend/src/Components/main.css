@@ -1,0 +1,28 @@
+body{
+    margin:0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 10vw 40vw 40vw 10vw;
+    grid-template-rows: 10vh 50vh;
+    grid-template-areas: "menu menu menu menu"
+                        "... Welcome form ...";
+    
+}
+.menu{
+    grid-area:menu;
+}
+.menu a{
+    margin-left: 1em;
+}
+.Welcome{
+    grid-area:Welcome;
+}
+.errors{
+    list-style: none;
+   
+}
+.errors li{
+    margin-bottom:1em;
+
+}
