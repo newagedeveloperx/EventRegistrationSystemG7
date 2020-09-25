@@ -265,13 +265,15 @@ li {
     height: 100%;
     margin: 0;
     
+    
 }
 
 .menuListItem {
+    border-radius: 3px;
     position:relative;
     left:200%;
     display: inline-block;
-    height: 35%;
+    height: 40%;
     width:auto;
     margin-right: 20px;
     margin-top:15px ;
@@ -281,6 +283,7 @@ li {
     background-color: #270949;
     
 }
+
 
 .menuListItem:last-child {
     margin-right: 0;
@@ -295,7 +298,7 @@ li {
 
 .menuDiv {
     position: relative;
-    left: -140%;
+    left: 30%;
     text-decoration: none;
     display: flex;
     align-items: center;

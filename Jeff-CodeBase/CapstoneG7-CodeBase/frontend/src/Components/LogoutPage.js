@@ -12,7 +12,8 @@ useEffect(() => {
             status: "SIGNED_OUT"
         }
     );
-}, []);
+//added hook dependency
+}, [props]);
     return (
         <section id="main">
             <Welcome />

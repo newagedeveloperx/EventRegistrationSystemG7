@@ -1,16 +1,16 @@
 import React from 'react';
 import Sessions from '../Components/Sessions';
-import LandingNav from "../Components/LandingNav";
-import SessionSideBar from '../Components/SessionSideBar';
+
+import Footer from "../Components/Footer";
+
+
 
 export default function LandingPage(props) {
     return (
-        <div id="landing">
-          
-            <div className = "landingContentent">
-                <SessionSideBar/>
-                <Sessions/>
-             </div>
+        <div>
+
+            <Sessions/>
+            <Footer/>
         </div>
     )
 }

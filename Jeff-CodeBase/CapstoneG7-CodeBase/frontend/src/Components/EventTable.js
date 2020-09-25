@@ -75,7 +75,7 @@ function EventTable(props) {
             <div id="table-main">
                 <br />
                
-                <div dangerouslySetInnerHTML={{ __html: table }} />
+                <div dangerouslySetInnerHTML={{ __html: table}} />
             </div>
         </>)
 
