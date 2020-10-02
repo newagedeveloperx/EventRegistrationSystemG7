@@ -11,8 +11,9 @@ export default function NavBar() {
                 </div>
                 <div className = "menuDiv">
                 <ul className = "menulist" style = {{color: "white"}}>
-                    <li className = "menulistItem" style = {{color: "white"}}> <a href ="/" style = {{color: "white"}}>Home</a></li>
-                    <li className = "menulistItem"><a href  ="/" style = {{color: "white"}}>My Event</a></li>
+                    <li className = "menulistItem" style = {{color: "white"}}> <a href ="/home" style = {{color: "white"}}>Home</a></li>
+                    <li className = "menulistItem"><a href  ="/myevents" style = {{color: "white"}}>My Events</a></li>
+                    <li className = "menulistItem"><a href  ="/ourteam" style = {{color: "white"}}>Our Team</a></li>
                     <li className = "menulistItem"><a href ="/"style = {{color: "white"}}>Sign Out</a></li>
                 </ul>
                 </div>

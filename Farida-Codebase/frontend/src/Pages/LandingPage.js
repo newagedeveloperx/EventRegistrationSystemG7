@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
-import Sessions from '../Components/Sessions';
+import NavBar from "../Component/NavBar";
+import Footer from "../Component/Footer";
+import Sessions from '../Component/Sessions';
 
 export default function LandingPage() {
     return (
