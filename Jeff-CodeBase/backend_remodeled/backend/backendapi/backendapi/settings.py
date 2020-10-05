@@ -37,20 +37,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-     #adding phone number app
+     #phone number inclusion 
     'phonenumber_field',
     #adding rest framework
     'rest_framework',
     'rest_framework.authtoken',
-    #adding cross origin header
+    #adding cross origin...
     'corsheaders',
-    #adding application api (backend)
+    #adding api app
     'api',
-    #adding application accounts (backend)
+    #adding accounts app
     'accounts',
-    #adding application booking
-    'booking,'
-    #adding knox to installed applications
+    #adding eventsbooking app
+    'eventsbooking',
+    #adding knox
     'knox'
 ]
 

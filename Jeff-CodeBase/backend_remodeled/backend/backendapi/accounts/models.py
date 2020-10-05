@@ -27,8 +27,6 @@ class CustomUserManager(BaseUserManager):
             raise ValueError(_('Username is required'))
         if not Phone:
             raise ValueError(_('A user is required to have a phone number'))
-        #if not Date_Of_Birth:
-        #    raise ValueError(_('A user is required to have a date of birth'))
         if not City:
             raise ValueError(_('Kindly enter a city'))
 
@@ -88,9 +86,6 @@ class Account(AbstractBaseUser, PermissionsMixin):
     City = models.TextField(
         verbose_name='City', max_length=200, blank=False)
     
-    #Date_Of_Birth = models.DateField(
-    #    verbose_name='Date_Of_Birth', auto_now=True, blank=True, null=True)
-
   
     
 
@@ -110,15 +105,7 @@ class Account(AbstractBaseUser, PermissionsMixin):
     REQUIRED_FIELDS = ['Firstname', 'Lastname',
                         'email', 'Phone', 'City']
 
-    #def get_full_name(self):
-    #    """
-    #    Returning the the full name
-    #    """
-    #    Fullname = '%s %s' % (self.Firstname, self.Lastname)
-    #    return Fullname.strip()
-
-    #def __str__(self):
-    #    return ('{} <{}>'.format(self.get_Fullname), self.Fullname)
+   
 
     def has_perm(self, perm, obj=None):
         "User has special persmissions"

@@ -12,13 +12,6 @@ from rest_framework.response import Response
 
 # Create your views here.
 
-#Creating the User viewset
-#class UserViewSet(viewsets.ModelViewSet):
-#    queryset = Account.objects.all()
-#    serializer_class = UserSerializer
-
-
-
 #Events viewset
 
 class EventsView(viewsets.ModelViewSet):
@@ -48,34 +41,6 @@ class EventList(generics.GenericAPIView):
         serializer = EventsSerializer(event,many = True)
         return Response({"count":count, "data":serializer.data})
 
-#class EventsListView(ListAPIView):
-#    queryset = Events.objects.all()
-#    serializer_class = EventsSerializer
-
-#Events Detail view
-#class EventsDetailView(RetrieveAPIView):
-#    queryset = Events.objects.all()
-#    serializer_class = EventsSerializer
-
-#Events Creation View
-
-#class EventsCreateView(CreateAPIView):
-#    queryset = Events.objects.all()
-#    serializer_class = EventsSerializer
-
-#    def post(self,request):
-#        file_model = Events()
-        
-#        _, file = request.FILES.popitem() #get first element of uploaded images
-#        file = file[0] # get the file from MultiValueDict
-#        file_model.file = file
-#        file_model.save()
-
-#        return HttpResponse(content_type='text/plain', content='Event added')
-
-
-
-#Events Destroy view
 
 class EventsDestroyView(DestroyAPIView):
     queryset = Events.objects.all()

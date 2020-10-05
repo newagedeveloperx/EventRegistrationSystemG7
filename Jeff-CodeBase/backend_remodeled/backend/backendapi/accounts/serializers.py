@@ -83,8 +83,7 @@ class LoginSerializer(serializers.ModelSerializer):
             'Username': user.Username,
             'tokens': user.tokens()
 
-#return super().validate (attrs)
-    
+   
         }
 
         return super().validate(attrs)
